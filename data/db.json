@@ -1,0 +1,52 @@
+{
+  "notes": [
+    {
+      "title": "MY journey as a programmer",
+      "details": "Lorem ipsum is simply a dummytext for the printing and typesetting industry",
+      "category": "Reminder",
+      "id": 1
+    },
+    {
+      "title": "MY baby girl",
+      "details": "Lorem ipsum is simply a dummytext for the printing and typesetting industry",
+      "category": "Money",
+      "id": 2
+    },
+    {
+      "title": "MY Love life",
+      "details": "Lorem ipsum is simply a dummytext for the printing and typesetting industry",
+      "category": "work",
+      "id": 3
+    },
+    {
+      "title": "my love",
+      "details": "She is beautiful and gorgeous",
+      "category": "reminder",
+      "id": 4
+    },
+    {
+      "title": "bush boy",
+      "details": "thats me",
+      "category": "money",
+      "id": 5
+    },
+    {
+      "title": "My Plan",
+      "details": "I have a plan of going to school abroad",
+      "category": "todos",
+      "id": 6
+    },
+    {
+      "title": "My Plan",
+      "details": "I have a plan of going to school abroad",
+      "category": "todos",
+      "id": 7
+    },
+    {
+      "title": "Job",
+      "details": "I will like to get a job that pays $3000 per month before the end of April",
+      "category": "work",
+      "id": 8
+    }
+  ]
+}

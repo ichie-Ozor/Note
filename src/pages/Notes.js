@@ -1,24 +1,27 @@
-import { Button, Container } from '@mui/material'
-import SendIcon from '@mui/icons-material/Send';
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-import React from 'react'
-import Boxes from './Boxes';
+import React, { useEffect, useState } from 'react'
+
+
+
 
 export default function Notes() {
+  const [notes, setNotes] = useState([])
+
+  useEffect(() => {
+    fetch('http://localhost:8000/notes')
+    .then(res => res.json())
+    .then(data => setNotes(data))
+    
+  }, [])  
+
+
+
+
+
   return (
-    <Container>
-      Notes Page
-      <br />
-      <Button
-      type='submit'
-      variant='contained'
-      color='secondary'
-      startIcon={<SendIcon />}
-      endIcon={<ArrowForwardIosIcon />}
-      >
-        Submit
-      </Button>
-      <Boxes />
-    </Container>
+    <div>
+      {notes.map((note) => (
+        <p key={note.id}>{note.title}</p>
+      ))}
+    </div>
   )
 }

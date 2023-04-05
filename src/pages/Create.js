@@ -5,7 +5,10 @@ import { Container } from '@mui/system';
 import SendIcon from '@mui/icons-material/Send';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import { makeStyles } from 'tss-react/mui';
-import { RadioGroup, Radio, TextField } from '@mui/material'
+import { FormLabel, FormControl, RadioGroup, Radio, TextField } from '@mui/material'
+import { useNavigate } from 'react-router-dom'
+import Boxes from './Boxes';
+
 
 
 
@@ -30,10 +33,12 @@ const useStyles = makeStyles({
 
 export default function Create() {
 const classes = useStyles()
+const navigate = useNavigate()
 const [title, setTitle] = useState('')
-const [detail, setDetail] = useState('')
+const [details, setDetails] = useState('')
 const [titleError, setTitleError] = useState(false)
 const [detailError, setDetailError] = useState(false)
+const [category, setCategory] = useState('money')
 
 
 const handleSubmit = (e) => {
@@ -45,11 +50,15 @@ const handleSubmit = (e) => {
   if (title === '') {
     setTitleError(true)
   }
-  if (detail === ''){
+  if (details === ''){
     setDetailError(true)
   }
-  if (title && detail){
-    console.log(title, detail)
+  if (title && details){
+    fetch('http://localhost:8000/notes', {
+      method: 'POST',
+      headers: {"Content-type": "application/json"},
+      body: JSON.stringify({ title, details, category})
+    }).then(() => navigate('/'))
   }
 }
 
@@ -80,7 +89,7 @@ const handleSubmit = (e) => {
           error={titleError}
         />
          <TextField 
-          onChange={(e) => setDetail(e.target.value)}
+          onChange={(e) => setDetails(e.target.value)}
           className={classes.field}
           label="Details"
           variant='outlined'
@@ -91,14 +100,18 @@ const handleSubmit = (e) => {
           fullWidth
           error={detailError}
         />
-        <RadioGroup>
+
+        <FormControl className={classes.field}>
+        <FormLabel>Note Category</FormLabel>
+        <RadioGroup value={category} onChange={(e) => setCategory(e.target.value)}>
         <FormControlLabel value='money' control={<Radio />} label='Money'/>
         <FormControlLabel value='todos' control={<Radio />} label='Todos'/>
         <FormControlLabel value='reminder' control={<Radio />} label='Reminder'/>
         <FormControlLabel value='work' control={<Radio />} label='Work'/>
         </RadioGroup>
+        </FormControl>
 
-
+        <br />
         <Button
           type='submit'
           variant='contained'
@@ -111,7 +124,7 @@ const handleSubmit = (e) => {
             submit
         </Button>
       </form>
-
+      <Boxes />
 </Container>
   )
 }
