@@ -1,12 +1,6 @@
 {
   "notes": [
     {
-      "title": "Hassana",
-      "details": "She is the one am in love with right now. Yes we have our issues but we will be fine",
-      "category": "work",
-      "id": 1
-    },
-    {
       "title": "Prime College",
       "details": "This is a place i work, yes they pay me well but am tire of the teaching profession and will like to change into IT",
       "category": "work",
@@ -23,6 +17,12 @@
       "details": "She is a greate misician and good at what she does, she is also a pastors daughter",
       "category": "money",
       "id": 5
+    },
+    {
+      "title": "Best Book",
+      "details": "I have no best book in particular but there are pretty some authors who are good and I didn't regret reading their write up, for example, Francine Rivers, Jim Collins, Dan Brown, Robert Green, Michael Loboeff, Daniel Garber, Robert Kiyosaki, Bankole Olushina (Pst Bankie)  and a lot more. i didn't regret reading their books",
+      "category": "reminder",
+      "id": 6
     }
   ]
 }
