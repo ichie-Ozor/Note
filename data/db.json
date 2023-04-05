@@ -1,52 +1,28 @@
 {
   "notes": [
     {
-      "title": "MY journey as a programmer",
-      "details": "Lorem ipsum is simply a dummytext for the printing and typesetting industry",
-      "category": "Reminder",
+      "title": "Hassana",
+      "details": "She is the one am in love with right now. Yes we have our issues but we will be fine",
+      "category": "work",
       "id": 1
     },
     {
-      "title": "MY baby girl",
-      "details": "Lorem ipsum is simply a dummytext for the printing and typesetting industry",
-      "category": "Money",
+      "title": "Prime College",
+      "details": "This is a place i work, yes they pay me well but am tire of the teaching profession and will like to change into IT",
+      "category": "work",
       "id": 2
     },
     {
-      "title": "MY Love life",
-      "details": "Lorem ipsum is simply a dummytext for the printing and typesetting industry",
-      "category": "work",
-      "id": 3
-    },
-    {
-      "title": "my love",
-      "details": "She is beautiful and gorgeous",
+      "title": "My Father",
+      "details": "I miss you and i have not stopped missing you since then. I regret certain things I should have done but did not, am sorry",
       "category": "reminder",
       "id": 4
     },
     {
-      "title": "bush boy",
-      "details": "thats me",
+      "title": "Toni Braxton",
+      "details": "She is a greate misician and good at what she does, she is also a pastors daughter",
       "category": "money",
       "id": 5
-    },
-    {
-      "title": "My Plan",
-      "details": "I have a plan of going to school abroad",
-      "category": "todos",
-      "id": 6
-    },
-    {
-      "title": "My Plan",
-      "details": "I have a plan of going to school abroad",
-      "category": "todos",
-      "id": 7
-    },
-    {
-      "title": "Job",
-      "details": "I will like to get a job that pays $3000 per month before the end of April",
-      "category": "work",
-      "id": 8
     }
   ]
 }

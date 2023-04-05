@@ -4,7 +4,8 @@ import { Button } from '@mui/material';
 import { Container } from '@mui/system';
 import SendIcon from '@mui/icons-material/Send';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-import { makeStyles } from 'tss-react/mui';
+// import { makeStyles } from 'tss-react/mui';
+import { makeStyles } from '@mui/styles'
 import { FormLabel, FormControl, RadioGroup, Radio, TextField } from '@mui/material'
 import { useNavigate } from 'react-router-dom'
 import Boxes from './Boxes';
@@ -17,18 +18,18 @@ const useStyles = makeStyles({
     marginTop: 20,
     marginBottom: 20,
     display: 'block'
+  },
+  btn: {
+    fontSize: 60,
+    backgroundColor: 'red',
+    '&:hover' : {
+      backgroundColor: 'blue'
+    }
+  },
+  title : {
+    textDecoration: 'underline',
+    marginBottom: 20
   }
-  // btn: {
-  //   fontSize: 60,
-  //   backgroundColor: 'red',
-  //   '&:hover' : {
-  //     backgroundColor: 'blue'
-  //   }
-  // },
-  // title : {
-  //   textDecoration: 'underline',
-  //   marginBottom: 20
-  // }
 })
 
 export default function Create() {

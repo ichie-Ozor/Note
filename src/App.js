@@ -3,6 +3,7 @@ import "./App.css";
 import Create from "./pages/Create";
 import Notes from "./pages/Notes";
 import { ThemeProvider, createTheme } from '@mui/material/styles';
+// import Layout from "./components/Layout";
 
 
 const theme = createTheme({
