@@ -4,3 +4,29 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Mukta:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
 
+.appbar{
+  border-bottom: 0.1px solid rgb(208, 213, 218);
+  height: 80px;
+}
+.appbar:hover{
+  background: rgb(247, 241, 241);
+}
+.toolbar{
+  margin-top: 20px;
+}
+.my-masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -30px; /* gutter size offset */
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 30px; /* gutter size */
+  background-clip: padding-box;
+}
+
+/* Style your items */
+.my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
+  margin-bottom: 30px;
+}

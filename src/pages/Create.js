@@ -66,7 +66,7 @@ const handleSubmit = (e) => {
 
 // console.log(classes.btn)
   return (
-    <Container>
+    <Container style={{display:'block'}}>
       <Typography
         className={classes.title} //not working
         variant="h4"
@@ -76,7 +76,7 @@ const handleSubmit = (e) => {
       >
         Create a new Note
       </Typography>
-
+      
       <form noValidate autoComplete='off' onSubmit={handleSubmit}>
         <TextField 
          onChange={(e) => setTitle(e.target.value)}
@@ -88,6 +88,7 @@ const handleSubmit = (e) => {
           required
           fullWidth
           error={titleError}
+          style={{marginBottom: 20, marginTop: 20, display: 'block'}}
         />
          <TextField 
           onChange={(e) => setDetails(e.target.value)}
@@ -100,6 +101,7 @@ const handleSubmit = (e) => {
           required
           fullWidth
           error={detailError}
+          style={{marginBottom: 20, marginTop: 20, display: 'block'}}
         />
 
         <FormControl className={classes.field}>
@@ -124,8 +126,9 @@ const handleSubmit = (e) => {
           >
             submit
         </Button>
-      </form>
-      <Boxes />
+       </form>
+       <h2>This Part is just for sample</h2>
+      <Boxes style={{marginTop:20}}/>
 </Container>
   )
 }
